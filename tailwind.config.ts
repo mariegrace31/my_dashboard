@@ -1,3 +1,5 @@
+const withMT = require("@material-tailwind/react/utils/withMT");
+
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -9,8 +11,9 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: "#3A5A40",
+        secondary: "#588157",
+        tertiary: "#A3B18A",
       },
     },
   },
