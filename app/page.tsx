@@ -1,9 +1,12 @@
-import Image from "next/image";
-
-export default function Home() {
-  return (
-    <div className="">
-   <p>Hello there my name is marie</p>
+ import React from 'react'
+ 
+ function HomePage() {
+   return (
+    <div>
+      <h1 className="text-2xl font-bold mb-4">Welcome to the Dashboard</h1>
+      <p>Select a user from the sidebar to view details.</p>
     </div>
-  );
-}
+   )
+ }
+ 
+ export default HomePage;
