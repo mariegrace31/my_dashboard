@@ -41,13 +41,13 @@ const HomePage: React.FC = () => {
   };
 
   return (
-    <div className='p-20 lg:p-10 w-[100%] lg:w-[80%] ml-0 md:ml-10 lg:ml-72'>
+    <div className='p-20 lg:p-10 w-[100%] md:w-[130%] lg:w-[80%] m-0 md:m-0 lg:ml-72'>
       <div className='flex flex-col gap-4 text-center'>
-        <h1 className="text-xl lg:text-4xl md:text-2xl font-bold text-primary">Welcome to our dashboard!</h1>
+        <h1 className="text-xl lg:text-4xl md:text-3xl font-bold text-primary">Welcome to our dashboard!</h1>
         <p className='font-thin text-sm lg:text-lg text-secondary'>We're excited to have you here</p>
         <hr className='border-2 border-primary w-[50%] mb-8 mx-auto'/>
       </div>
-      <ul className='grid grid-cols-1 md:grid-cols-2 md:gap-8 lg:grid-cols-3 gap-5 ml-1 lg:ml-16'>
+      <ul className='grid grid-cols-1 md:grid-cols-2 md:gap-8 lg:grid-cols-3 gap-5 ml-1 md:ml-0 lg:ml-16'>
         {users.map((user) => (
           <li key={user.id} className="border rounded-md shadow-md p-4 text-center">
             <FaUserAlt className='text-3xl lg:text-5xl text-tertiary mb-4 mx-auto' />

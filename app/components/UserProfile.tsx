@@ -20,7 +20,7 @@ type UserProfileProps = {
 const UserProfile: React.FC<UserProfileProps> = ({ name, email, phone, address }) => {
   return (
     <div className="p-4 border rounded-md shadow-md">
-      <h2 className="text-2xl font-semibold">{name}</h2>
+      <h2 className="text-xl lg:text-2xl font-semibold">{name}</h2>
       <p>Email: {email}</p>
       <p>Phone: {phone}</p>
       <p>Address: {address.street}, {address.suite}, {address.city}, {address.zipcode}</p>

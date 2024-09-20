@@ -41,8 +41,8 @@ const UserPage: React.FC = () => {
   }
 
   return (
-    <div className="p-10 pl-96 w-[80%]">
-      <h1 className="text-3xl text-primary font-semibold">Activities for User {id}</h1>
+    <div className="p-10 pl-3 mt-6 lg:mt-0 lg:pl-96 w-[80%]">
+      <h1 className="text-xl lg:text-3xl text-primary font-semibold">Activities for User {id}</h1>
       <UserActivities posts={posts} />
     </div>
   );
