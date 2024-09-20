@@ -74,7 +74,7 @@ const HomePage: React.FC = () => {
             
             <div className="mt-10 flex gap-4">
               <Link href={`/users/${selectedUser.id}`} className="text-white bg-primary text-xl rounded-lg px-4 py-2">
-                View Posts
+                View Post
               </Link>
               <button
                 onClick={closeModal}

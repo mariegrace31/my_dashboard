@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import { FaUserAlt } from "react-icons/fa";
 
 type User = {
   id: number;
@@ -36,13 +37,14 @@ const UsersPage: React.FC = () => {
   }
 
   return (
-    <div className="p-6 ml-80">
-      <h1 className="text-2xl font-semibold">Users List</h1>
-      <ul className="mt-4">
+    <div className="p-10 ml-80 w-[110%]">
+      <h1 className="text-3xl text-primary font-semibold text-center">Users List</h1>
+      <ul className="mt-4 grid grid-cols-2 gap-12">
         {users.map((user) => (
-          <li key={user.id} className="py-2 border-b">
-            <Link href={`/users/${user.id}`} className="text-blue-500 hover:underline">
-              {user.name} - {user.email}
+          <li key={user.id} className="p-3 flex items-center gap-3 border h-20 rounded-md hover:bg-uns shadow-sm">
+            <FaUserAlt className='text-tertiary text-2xl' />
+            <Link href={`/users/${user.id}`} className="text-gray-500 text-xl hover:underline">
+              {user.name}
             </Link>
           </li>
         ))}
