@@ -14,6 +14,7 @@ const config: Config = {
         primary: "#3A5A40",
         secondary: "#588157",
         tertiary: "#A3B18A",
+        uns: "#CCD5AE",
       },
     },
   },
