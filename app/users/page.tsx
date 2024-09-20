@@ -28,7 +28,7 @@ const UsersPage: React.FC = () => {
   }, []);
 
   if (loading) {
-    return <p>Loading users...</p>;
+    return <p className='font-bold text-3xl text-center my-auto text-primary'>Loading users...</p>;
   }
 
   if (error) {
@@ -36,7 +36,7 @@ const UsersPage: React.FC = () => {
   }
 
   return (
-    <div className="p-6">
+    <div className="p-6 ml-80">
       <h1 className="text-2xl font-semibold">Users List</h1>
       <ul className="mt-4">
         {users.map((user) => (
