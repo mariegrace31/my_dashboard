@@ -77,6 +77,7 @@ const HomePage: React.FC = () => {
                 View Post
               </Link>
               <button
+              
                 onClick={closeModal}
                 className="text-primary text-lg lg:text-xl bg-uns p-2 rounded-lg"
               >
